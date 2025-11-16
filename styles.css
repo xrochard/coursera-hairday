@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header-logo {
+    display: block;
+    margin: 0 auto;
+    padding: 2rem;
+    width: 200px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    background-color: rgb(208, 96, 76);
+    height: 50px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    align-self: center;
+    line-height: 50px;
+}
+
+section {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#promo-section {
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#info-section {
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+@media (min-width: 600px) {
+    #info-section {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 0 2rem 0;
+    }
+}
+
+@media (min-width: 900px) {
+    #info-section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 600px) {
+    article:hover {
+        transform: scale(1.03);
+        transition: 0.5s;
+    }
+}
+
+article {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid rgb(208, 96, 76);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: rgb(248, 245, 240);
+}
+
+article h2 {
+    color: rgb(208, 96, 76);
+    font-weight: 900;
+    font-style: oblique;
+    font-size: xx-large;
+    text-transform: uppercase;
+    display: block;
+    text-align: justify;
+}
+
+article p {
+    margin-top: 1rem;
+    color: #333;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+button {
+    background-color: rgb(208, 96, 76);
+    color: white;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-style: oblique;
+    font-weight: bolder;
+}
+
+footer {
+    display: flex;
+    background-color: rgb(208, 96, 76);
+    height: 50px;
+}
+
+footer div {
+    flex: 1;
+    align-self: center;
+    text-align: center;
+    color: white;
+}
+
+footer img {
+    flex: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100px;
+    height: auto;
+}
